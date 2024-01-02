@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class CafeUtil {
     public int getStreakGoal() {
         int sum = 0;
-        int numWeeks = 10;
+        int numWeeks = 3;
         for(int i=1; i <= numWeeks; i++) {
             sum += i;
         }
@@ -30,8 +30,8 @@ public class CafeUtil {
         System.out.println("Please enter your name:");
         String username = System.console().readLine();
         System.out.println("hello" +" "+ username);
-        customers.add(username);
         int peopleAhead = customers.size();
+        customers.add(username);
         System.out.println(String.format("There are %d people in front of you", peopleAhead));
         System.out.println(customers);
     }
