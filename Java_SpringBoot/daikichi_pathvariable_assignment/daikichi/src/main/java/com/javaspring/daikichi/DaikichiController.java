@@ -35,12 +35,13 @@ public class DaikichiController {
 	
 	@RequestMapping("/lotto/{num}")
 	public String lotto(@PathVariable("num") int num) {
-		if(num%2 != 0) {
-			return "You have enjoyed the fruits of your labor but now is a great time to spend time with family and friends.";
-		}
-		else {
-			return "You will take a grand journey in the near future, but be weary of tempting offers";
-		}
+		return num%2 != 0? "You have" : "You will take a grand journey in";
+//		if(num%2 != 0) {
+//			return "You have enjoyed the fruits of your labor but now is a great time to spend time with family and friends.";
+//		}
+//		else {
+//			return "You will take a grand journey in the near future, but be weary of tempting offers";
+//		}
 	}
 	
 	
